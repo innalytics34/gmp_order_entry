@@ -33,7 +33,7 @@ export default function OrdersGrid() {
       <div className={'content-block'} style={{marginBottom: 20 }}>
       <h2 >Orders Entry List</h2>
       <DropDownButton
-              text="add"
+              text="Create"
               icon="add"
               dropDownOptions={buttonDropDownOptions}
               items={downloads}
