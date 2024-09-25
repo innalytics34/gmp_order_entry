@@ -231,7 +231,7 @@
 .dx-icon-dragvertical,
 .dx-icon-edit,
 .dx-icon-edittableheader,
-.dx-icon-username,
+.dx-icon-email,
 .dx-icon-endswith,
 .dx-icon-equal,
 .dx-icon-errorcircle,
@@ -468,7 +468,7 @@
 .dx-icon-edit:before {
   content: "\f023";
 }
-.dx-icon-username:before {
+.dx-icon-email:before {
   content: "\f024";
 }
 .dx-icon-event:before {
@@ -3246,7 +3246,7 @@
 .dx-icon-doc,
 .dx-icon-download,
 .dx-icon-edit,
-.dx-icon-username,
+.dx-icon-email,
 .dx-icon-errorcircle,
 .dx-icon-event,
 .dx-icon-eventall,

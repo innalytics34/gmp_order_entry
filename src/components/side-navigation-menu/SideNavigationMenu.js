@@ -1,4 +1,4 @@
-import React, { useEffect, useRef, useCallback, useMemo } from 'react';
+import React, { useEffect, useRef, useCallback, useState } from 'react';
 import { TreeView } from 'devextreme-react/tree-view';
 import { navigation } from '../../app-navigation';
 import { useNavigation } from '../../contexts/navigation';
@@ -18,17 +18,24 @@ export default function SideNavigationMenu(props) {
   } = props;
 
   const { isLarge } = useScreenSize();
-  function normalizePath () {
-    return navigation.map((item) => (
-      { ...item, expanded: isLarge, path: item.path && !(/^\//.test(item.path)) ? `/${item.path}` : item.path }
-    ))
-  }
+  const [items, setItems] = useState([]);
 
-  const items = useMemo(
-    normalizePath,
-    // eslint-disable-next-line react-hooks/exhaustive-deps
-    []
-  );
+  useEffect(() => {
+    async function fetchNavigation() {
+      try {
+        const menu = await navigation();
+        const normalizedMenu = menu.map((item) => (
+          { ...item, expanded: isLarge, path: item.path && !(/^\//.test(item.path)) ? `/${item.path}` : item.path }
+        ));
+        setItems(normalizedMenu);
+      } catch (error) {
+        console.error('Error fetching sidebar data:', error);
+      }
+    }
+    fetchNavigation();
+  }, []);
+
+  
 
   const { navigationData: { currentPath } } = useNavigation();
 

@@ -1,7 +1,7 @@
 import axios from "axios";
 import Cookies from "js-cookie";
 
-const API_BASE_URL = "http://127.0.0.1:805/test";
+const API_BASE_URL = "http://192.168.0.183:811/OrderEntry";
 const jwtToken = Cookies.get("token");
 const axiosInstance = axios.create({
   baseURL: API_BASE_URL,

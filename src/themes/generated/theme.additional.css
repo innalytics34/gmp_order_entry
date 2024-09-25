@@ -232,7 +232,7 @@
 .dx-swatch-additional .dx-icon-doc,
 .dx-swatch-additional .dx-icon-download,
 .dx-swatch-additional .dx-icon-edit,
-.dx-swatch-additional .dx-icon-username,
+.dx-swatch-additional .dx-icon-email,
 .dx-swatch-additional .dx-icon-errorcircle,
 .dx-swatch-additional .dx-icon-event,
 .dx-swatch-additional .dx-icon-eventall,
@@ -429,7 +429,7 @@
 .dx-swatch-additional .dx-icon-dragvertical,
 .dx-swatch-additional .dx-icon-edit,
 .dx-swatch-additional .dx-icon-edittableheader,
-.dx-swatch-additional .dx-icon-username,
+.dx-swatch-additional .dx-icon-email,
 .dx-swatch-additional .dx-icon-endswith,
 .dx-swatch-additional .dx-icon-equal,
 .dx-swatch-additional .dx-icon-errorcircle,
@@ -666,7 +666,7 @@
 .dx-swatch-additional .dx-icon-edit:before {
   content: "\f023";
 }
-.dx-swatch-additional .dx-icon-username:before {
+.dx-swatch-additional .dx-icon-email:before {
   content: "\f024";
 }
 .dx-swatch-additional .dx-icon-event:before {

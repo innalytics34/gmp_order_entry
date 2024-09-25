@@ -1,5 +1,5 @@
 const appInfo = {
-    title: 'Test App'
+    title: 'GMP'
 };
 export default appInfo;
 

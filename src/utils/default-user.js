@@ -11,7 +11,7 @@ if (token) {
       username: '',
     };
     const decodedToken = decodeToken(token);
-    userInfo.username = decodedToken.name || 'Guest';
+    userInfo.username = decodedToken.username || 'Guest';
   } catch (error) {
     console.error("Failed to decode token:", error);
   }

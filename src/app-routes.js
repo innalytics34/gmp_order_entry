@@ -1,18 +1,10 @@
-import { HomePage,PurchaseInward, InwardInspection } from './pages';
+import { HomePage,OrderEntryList } from './pages';
 import { withNavigationWatcher } from './contexts/navigation';
 
 const routes = [
     {
-        path: '/PurchaseInward',
-        element: PurchaseInward
-    },
-    {
-        path: '/InwardInspection',
-        element: InwardInspection
-    },
-    {
-        path: '/home',
-        element: HomePage
+        path: '/OrderEntryList',
+        element: OrderEntryList
     },
 ];
 
