@@ -1,0 +1,31 @@
+$base-accent: #000000 !default;
+$base-text-color: #000000de !default;
+$base-bg: #ffffff !default; // Default to light theme
+$base-border-color: #e0e0e0 !default;
+$base-border-radius: 4px !default;
+
+$theme: null !default; // This will be set dynamically
+
+:root {
+  --base-accent: #{$base-accent};
+  --base-text-color: #{$base-text-color};
+  --base-bg: #{$base-bg};
+  --base-border-color: #{$base-border-color};
+  --base-border-radius: #{$base-border-radius};
+
+  @if $theme == 'dark' {
+    --base-accent: #ffffff; 
+    --base-text-color: #ffffff;
+    --base-bg: #1a1a1a; 
+    --base-border-color: #333333; 
+  }
+}
+
+// Example usage of the CSS variables in a component
+.card {
+  background-color: var(--base-bg);
+  color: var(--base-text-color);
+  border: 1px solid var(--base-border-color);
+  border-radius: var(--base-border-radius);
+  padding: 1rem;
+}
