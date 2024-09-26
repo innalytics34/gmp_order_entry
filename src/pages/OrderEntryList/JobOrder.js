@@ -35,7 +35,6 @@ const JobOrder = () => {
    const [showMessage, setShowMessage] = useState(false);
    const [Remarks, setRemarks] = useState('');
 
-
    const defaultStylingMode = 'outlined';
    const labelMode= 'floating';
 
